@@ -1,0 +1,21 @@
+package br.lasalle.oop.semana1;
+
+public class Caneta {
+	
+	//atributos desta classe
+	String modelo;
+	String cor;
+	float ponta;
+	int carga;
+	boolean tampada;
+	
+	void rabiscar () 
+	{
+		
+		System.out.println ("Rabiscando na cor " + cor"!!!");
+		
+	}
+	
+
+}
+
