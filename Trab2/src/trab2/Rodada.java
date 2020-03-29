@@ -68,7 +68,7 @@ public class Rodada{
 		System.out.println("Integrantes do Grupo:\n");
 		System.out.println("Edgard Diniz Bittencourt\n");
 		System.out.println("=========================================\n");
-		System.out.println("Github: \n");
+		System.out.println("Github:https://github.com/schakal/lasalle.2020.1.poo/tree/master/Trab2 \n");
 		System.out.println("=========================================\n");
 		System.out.println("Video Youtube: \n");
 		//public void Gols () {

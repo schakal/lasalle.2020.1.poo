@@ -40,7 +40,7 @@ public class Partida {
 	@Override
 	public String toString() {
 		
-		return timeVisitante.getNome() + " " +  getScoreVisitante() + "X"+" " + getScoreLocal() + " " + timeLocal.getNome() + "\n";
+		return timeVisitante.getNome() + " " +  getScoreVisitante()+" " + "X"+" " + getScoreLocal() + " " + timeLocal.getNome() + "\n";
 	}
 	
 	public void finalizarPartida() {

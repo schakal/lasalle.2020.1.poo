@@ -23,7 +23,7 @@ public class Time {
 		
 		
 		public String toString() {
-			return "\nTime:" + nome + "\nVitórias:" + qtdVitorias + "\n Empates:" + qtdEmpates + "\nDerrotas:" + qtdDerrotas + "\nPontos:" + qtdPontos;
+			return "\nTime:" + nome + "\nVitórias:" + qtdVitorias + "\nEmpates:" + qtdEmpates + "\nDerrotas:" + qtdDerrotas + "\nPontos:" + qtdPontos;
 			
 		}
 		
