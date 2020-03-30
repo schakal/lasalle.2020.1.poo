@@ -67,10 +67,11 @@ public class Rodada{
 		System.out.println("=========================================\n");
 		System.out.println("Integrantes do Grupo:\n");
 		System.out.println("Edgard Diniz Bittencourt\n");
+		System.out.println("Natalia Cabral Andrade\n");
 		System.out.println("=========================================\n");
 		System.out.println("Github:https://github.com/schakal/lasalle.2020.1.poo/tree/master/Trab2 \n");
 		System.out.println("=========================================\n");
-		System.out.println("Video Youtube: \n");
+		System.out.println("Video Youtube: https://youtu.be/2sFY70tUTEA\n");
 		//public void Gols () {
 			
 			//this.scoreVisitante = random.nextInt(10);

@@ -16,6 +16,7 @@ public class Partida {
 	private int scoreLocal;
 	private String dataPartida;
 	
+	
 	Random random = new Random();
 	Date data = new Date();
 	
@@ -46,49 +47,55 @@ public class Partida {
 	public void finalizarPartida() {
 		
 		
-		if (this.scoreVisitante > this.scoreLocal) {
+		if (getScoreVisitante() > getScoreLocal() ) {
 			
-				
-				if (this.scoreVisitante == this.scoreLocal + 3) {
-					
-					getTimeVisitante().setQtdVitorias(1);
-					timeVisitante.setQtdPontos(4);
-					timeLocal.setQtdDerrotas(1);
+				if (getScoreVisitante() >= getScoreLocal() + 3) 
+				{
+					this.timeVisitante.setQtdVitorias(1);
+					this.timeVisitante.setQtdPontos(4);
+					this.timeLocal.setQtdDerrotas(1);
 				}
 				else {
-					
-					timeVisitante.setQtdVitorias(1);
-					timeVisitante.setQtdPontos(3);
-					timeLocal.setQtdDerrotas(1);
-					
+					this.timeVisitante.setQtdVitorias(1);
+					this.timeVisitante.setQtdPontos(3);
+					this.timeLocal.setQtdDerrotas(1);
 				}
-		}
-				else if  (this.scoreVisitante == this.scoreLocal){
 				
-					timeVisitante.setQtdEmpates(1);
-					timeLocal.setQtdEmpates(1);
-					timeVisitante.setQtdPontos(1);
-					timeLocal.setQtdPontos(1);
+				
+					
 					
 				}
-						else  {
-							if	(scoreLocal == scoreVisitante + 3) {
-								
-								timeLocal.setQtdVitorias(1);
-								timeLocal.setQtdPontos(4);
-								timeVisitante.setQtdDerrotas(1);
-							}
-							else {
-								
-								timeLocal.setQtdVitorias(1);
-								timeLocal.setQtdPontos(3);
-								timeVisitante.setQtdDerrotas(1);
-								
-							}
+				else if (getScoreLocal () > getScoreVisitante() )  {
+					
+					if ( getScoreLocal () >= getScoreVisitante() + 3) {
+						
+						this.timeLocal.setQtdVitorias(1);
+						this.timeLocal.setQtdPontos(4);
+						this.timeVisitante.setQtdDerrotas(1);
+					
+					}
+					else {
+						
+						this.timeLocal.setQtdVitorias(1);
+						this.timeLocal.setQtdPontos(3);
+						this.timeVisitante.setQtdDerrotas(1);
+						
+					}
+				}
+		
+				else  {
+				
+					this.timeVisitante.setQtdEmpates(1);
+					this.timeLocal.setQtdEmpates(1);
+					this.timeVisitante.setQtdPontos(1);
+					this.timeLocal.setQtdPontos(1);
+					
 							
 							
 						}
-		}
+		
+}
+
 		
 	
 	
