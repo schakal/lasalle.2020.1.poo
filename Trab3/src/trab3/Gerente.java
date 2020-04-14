@@ -25,15 +25,12 @@ public class Gerente extends Funcionario{
 	
 	
 	@Override
-	public void getBonificacao() {
+	public Double getBonificacao() {
 		
-		Double bonificacao = 10.0;
+		return getSalario() * setBonificacao()/100 + 1000;
 		
-		
-		
-		System.out.println(getSalario() * bonificacao/100 + 1000); 
 	
-	
+		
 	}
 	
 	

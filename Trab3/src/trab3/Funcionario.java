@@ -2,10 +2,11 @@ package trab3;
 
 public class Funcionario {
 	
+	
 	private String nome;
 	private String cpf;
 	private Double salario;
-	
+	private Double bonificacao = 10.0;
 	
 	
 	
@@ -30,20 +31,18 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	public void getBonificacao() {
+	public Double getBonificacao() {
 		
-		int bonificacao = 10;
+		return salario * setBonificacao()/100;
 		
-		System.out.println(salario * bonificacao/100); 
-		
-		
-		
-		
-		
-		
+	
 		
 	}
-	
+	public Double setBonificacao() {
+		
+		
+		return bonificacao;
+	}
 	
 
 }

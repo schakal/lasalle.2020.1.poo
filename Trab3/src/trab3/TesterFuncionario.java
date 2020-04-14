@@ -12,7 +12,7 @@ public class TesterFuncionario {
 		funcionario.setNome("Joao");
 		funcionario.setCpf("00000000000000");
 		funcionario.setSalario(2000.0);
-		funcionario.getBonificacao();
+		System.out.println(funcionario.getBonificacao());
 		
 		
 		
@@ -23,7 +23,7 @@ public class TesterFuncionario {
 		gerente.setNome("Joao");
 		gerente.setCpf("00000000000000");
 		gerente.setSalario(6000.0);
-		gerente.getBonificacao();
+		System.out.println(gerente.getBonificacao());
 	
 		
 	}
