@@ -20,19 +20,35 @@ public class TesterFuncionario {
 		funcionario.setNome("Joao");
 		funcionario.setCpf("00000000000000");
 		funcionario.setSalario(2000.0);
+		System.out.println(funcionario.getNome());
 		System.out.println(funcionario.getBonificacao());
+		System.out.println(funcionario.getCpf());
 		
 		
 		
+		gerente.setNome("Joao");
+		gerente.setCpf("00000000000000");
 		
 		System.out.println("Entre com a sua senha:");
 		int pass = input.nextInt();
-		gerente.autentica();
-		gerente.setNome("Joao");
-		gerente.setCpf("00000000000000");
-		gerente.setSalario(6000.0);
-		System.out.println(gerente.getBonificacao());
-	
+		
+		if (gerente.autentica(pass)) {
+			
+			
+			gerente.setSalario(6000.0);
+			System.out.println(gerente.getNome());
+			System.out.println(gerente.getCpf());
+			System.out.println(gerente.getBonificacao());
+			System.out.println("Numero de Funcionarios Gerenciados:" + gerente.getNumeroDeFuncionarioGerenciados());
+			
+		}
+		else {
+			
+			System.out.println("Acesso negado");
+			
+		}
+		
+		
 		
 	}
 

@@ -2,24 +2,31 @@ package trab3;
 
 public class Gerente extends Funcionario{
 	
-	private int senhaEspecial = 1234;
+	private int senhaEspecial;
 	private int numeroDeFuncionarioGerenciados;
 	
 	
-	public void autentica() {
+	public boolean autentica(int senhaEspecial) {
 		
 		
+		this.senhaEspecial = 1234;
 		
-		if (senhaEspecial == 1234) { 
+		
+		if (senhaEspecial == this.senhaEspecial) { 
 			
 			System.out.println("Acesso liberado");
-			getNumeroDeFuncionarioGerenciados();
+			
+			
+			
+			
+			return true;
 			
 		}
 		else {
-			System.out.println("Acesso negado");
 			
+			return false;
 		}
+		
 	}
 	
 	
@@ -27,7 +34,7 @@ public class Gerente extends Funcionario{
 	@Override
 	public Double getBonificacao() {
 		
-		return getSalario() * setBonificacao()/100 + 1000;
+		return super.getBonificacao() + 1000;
 		
 	
 		

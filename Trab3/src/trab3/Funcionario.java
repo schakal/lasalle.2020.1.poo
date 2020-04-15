@@ -6,7 +6,7 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private Double salario;
-	private Double bonificacao = 10.0;
+	
 	
 	
 	
@@ -33,15 +33,10 @@ public class Funcionario {
 	
 	public Double getBonificacao() {
 		
-		return salario * setBonificacao()/100;
+		return salario * 10.0/100;
 		
 	
 		
-	}
-	public Double setBonificacao() {
-		
-		
-		return bonificacao;
 	}
 	
 
