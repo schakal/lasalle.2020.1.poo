@@ -9,6 +9,14 @@ public class TesterFuncionario {
 		Funcionario funcionario = new Funcionario();
 		Scanner input = new Scanner(System.in);
 		
+		System.out.println("***********************************");
+		System.out.println("NomeAluno: Edgard Diniz Bittencourt Matricula: 0050007061");
+		System.out.println("************************************");
+		
+		
+		
+		
+		
 		funcionario.setNome("Joao");
 		funcionario.setCpf("00000000000000");
 		funcionario.setSalario(2000.0);
