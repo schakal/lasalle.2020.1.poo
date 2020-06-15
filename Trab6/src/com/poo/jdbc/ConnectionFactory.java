@@ -14,9 +14,12 @@ public class ConnectionFactory {
 	// "jdbc:mysql://bd-poo.comquktz5ulz.us-east-1.rds.amazonaws.com:3306/bd_poo?useTimezone=true&serverTimezone=UTC";
 	// private static final String URL =
 	// "jdbc:mysql://db-poo.cy5hrvkxpl9s.us-east-1.rds.amazonaws.com:3306/meu_banco_aula?useTimezone=true&serverTimezone=UTC";
-	private static final String URL = "jdbc:mysql://127.0.0.1:3306/aluno?useTimezone=true&serverTimezone=UTC";
-	private static final String USER = "root";
-	private static final String SENHA = "";
+	//private static final String URL = "jdbc:mysql://127.0.0.1:3306/aluno?useTimezone=true&serverTimezone=UTC";
+	//private static final String USER = "root";
+	//private static final String SENHA = "123456";
+	private static final String URL = "jdbc:mysql://database-1.csj4ynaticdg.us-east-1.rds.amazonaws.com:3306/meu_banco_aula?useTimezone=true&serverTimezone=UTC"; 
+	private static final String USER = "admin"; 
+	private static final String SENHA = "Senha123"; 
 
 	public static Connection getConnection() {
 		try {
